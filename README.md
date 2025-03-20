@@ -3,7 +3,7 @@
 ````mermaid
 classDiagram
     class Usuario {
-        UUID id
+        Long id
         String nome
         String email
         String senha
@@ -11,16 +11,14 @@ classDiagram
     }
 
     class EmpresaColeta {
-        UUID id
+        Long id
         String nome
         String endereco
-        double latitude
-        double longitude
         List<String> tiposResiduos
     }
 
     class TipoResiduo {
-        UUID id
+        Long id
         String nome
     }
 
