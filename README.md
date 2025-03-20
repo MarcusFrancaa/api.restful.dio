@@ -7,7 +7,7 @@ classDiagram
         String nome
         String email
         String senha
-        List<EmpresaColeta> empresasFavoritas
+        List<EmpresaColeta> Favoritas
     }
 
     class EmpresaColeta {
