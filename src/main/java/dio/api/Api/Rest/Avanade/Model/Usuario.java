@@ -3,6 +3,7 @@ package dio.api.Api.Rest.Avanade.Model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -26,7 +27,7 @@ public class Usuario {
     private String senha;
 
     @OneToMany (mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List <EmpresaColeta> Favoritas;
+    private List <EmpresaColeta> Favoritas = new ArrayList<>();
 
     public Long getId() {
         return id;

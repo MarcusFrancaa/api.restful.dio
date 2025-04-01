@@ -28,6 +28,9 @@ public class EmpresaColeta {
     @NotBlank
     private String residuos;
 
+    @ManyToOne
+    @JoinColumn(name = "usuario_id", nullable = false)
+    private Usuario usuario;
 
     public Long getId() {
         return id;
